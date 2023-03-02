@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #090E21;
+    display: inline-flex;
+    height: 100%;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+main {
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+}
+
+.row {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+#navBar {
+    color: white;
+    height: 5rem;
+}
+
+#navbar_container {
+    background-color:#121832;
+}
+
+.coll{
+    height: 300px;
+}
+.coll2{
+    height: 400px;
+}
+
+.pelis {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.coll4{
+    height: 400px;
+}
+
+.btn0{
+    width: 70px;
+
+}
+
+.imgBG{
+    /*background-image: url(../imgs/pel3.jpeg); 
+    //background-size: cover;*/
+    width: 200px;
+    height: 300px;
+    background-image: radial-gradient(transparent 45%, rgb(15, 15, 62) 90%), url(../imgs/pel3.jpeg);
+    background-size: cover;
+}
+
+
+.carrul{
+    width: 200px;
+    height: 600px;
+    background-image: radial-gradient(transparent 45%, #090E21 80%), url(../imgs/dr\ strange.webp);
+    background-size: cover;
+    border-radius: 20%;
+}
+
+.carrul1{
+    width: 200px;
+    height: 600px;
+    background-image: radial-gradient(transparent 45%, #090E21 80%), url(../imgs/dragon\ ball\ super.webp);
+    background-size: cover;
+    border-radius: 20%;
+}
+
+.carrul2{
+    width: 200px;
+    height: 600px;
+    background-image: radial-gradient(transparent 45%, #090E21 80%), url(../imgs/thor\ love\ and\ thunder.webp);
+    background-size: cover;
+    border-radius: 20%;
+}
+
+.titulo1{
+    font-size: 14px;
+}
+
+.Titul1{
+    margin-top: 12px;
+}
+
+.nombrep{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: self-start;
+}
+
+.nombrep1{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: self-start;
+}
+.nombrep2{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: self-start;
+}
+.eva :hover{
+    transform: scale(1.02);
+
+}
+
+.sacar {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+#main_footer {
+    background-color: #121832;
+    color: white;
+    margin-top: auto;
+}
+
+#footer-logo img {
+    width: 30px;
+}
+
+.nav-link img {
+    width: 50px;
+}
+
+@media (max-width:1000px) {
+    .coll4{
+        display: none;
+    }
+    .coll1{
+        display: none;
+    }
+    .coll{
+        display: none;
+    }
+
+    
+}

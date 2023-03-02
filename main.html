@@ -1,0 +1,760 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stremax - Una Forma nueva de hacer Streaming</title>
+  <link rel="shortcut icon" href="./asset/img/logo_site.png" type="image/x-icon">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="./css/mainStyle.css">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body style="background-color: #090E21;">
+    <header>
+      <div id="navbar_container">
+        <nav id="navBar" class="navbar navbar-expand-lg navbar-dark" style="margin-left: 1rem;">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="./main.html">
+                <img src="./asset/img/logo_site.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                Stremax
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="background-color: #121832;">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left: 12px;">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./main.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./series.html">Series</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./movies.html">
+                    Estrenos
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./aboutUs.html">Sobre Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Subscribete</a>
+              </li>
+                </ul>
+                <form class="d-flex" role="search">
+                <input class="form-control me-2 bg-black" data-bs-theme="dark" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn rounded-circle" type="submit">
+                    <img src="./asset/img/search_icon.png" width="20" height="20" class="d-inline-block align-top" alt="">
+                </button>
+                </form>
+                <br>
+                <button type="button" class="navbar-brand bg-transparent" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <img src="./asset/img/user_logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                </button>
+            </div>
+        </div>
+      </nav>
+<!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button> -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Bienvenido</h5>
+        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="user_input" class="col-form-label">Email</label>
+            <input id="user_input" type="text" class="form-control" placeholder="Correo electronico">
+          </div>
+          <div class="form-group">
+            <label for="pass_input" class="col-form-label">Contraseña</label>
+            <input id="pass_input" type="text" class="form-control" placeholder="Contraseña">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer justify-content-center">
+        <button type="button" class="btn btn-primary w-100">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+    </header>
+        <!-- carrousel -->
+      <div class="container-xxl">
+
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active carrul" data-bs-interval="10000">
+              <img src="./asset/img/main_movies_img/dr strange.webp" class="d-block w-100" alt="...">
+              <div class="carousel-caption text-light nombrep"  >
+                <h2>Dr. Strange: Multiverso de la Locura</h2>
+                <p>Some representative placeholder content for the first slide.</p>
+                <button type="button" class="btn btn-primary">Reproducir Ahora</button>
+              </div>
+            </div>
+            <div class="carousel-item carrul1" data-bs-interval="2000">
+              <img src="./asset/img/main_movies_img/dragon ball super.webp" class="d-block w-100" alt="...">
+              <div class="carousel-caption text-light nombrep1">
+                <h2>Dragon Ball Super: Hero</h2>
+                <p>Some representative placeholder content for the second slide.</p>
+                <button type="button" class="btn btn-primary">Reproducir Ahora</button>
+              </div>
+            </div>
+            <div class="carousel-item carrul2">
+              <img src="./asset/img/main_movies_img/thor love and thunder.webp" class="d-block w-100" alt="...">
+              <div class="carousel-caption text-light nombrep2">
+                <h2>Thor: Amor y Trueno</h2>
+                <p>Some representative placeholder content for the third slide.</p>
+                <button type="button" class="btn btn-primary">Reproducir Ahora</button>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <main>
+        <div class="row">
+          <div class="col-2 coll">
+          </div>
+  
+          <div class="col-6 coll2">
+  
+            <h5 style="color: white; margin-top: 30px;">Peliculas Añadidas Recientemente</h5>
+            <div class="container-xxl pelis">
+                          
+              <div class="img1 eva">
+                <div class="card text-light border border-0" style="width: 10rem; background-color: #090E21; text-align: center;">
+                  <img src="./asset/img/main_movies_img/pel3.jpeg" class="card-img-top rounded-1" alt="..." style="height: 227px;">
+                  <div class=" Titul1">
+                    <h5 class="card-title" style="font-size: 16px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Evangelion</h5>
+                    
+                  </div>
+                </div>
+              </div>
+            
+      
+              <div class="img1 eva">
+                <div class="card text-light border border-0" style="width: 10rem; background-color: #090E21; text-align: center;">
+                  <img src="./asset/img/main_movies_img/1.webp" class="card-img-top" alt="..." style="height: 227px; border-radius: 7px;">
+                  <div class="Titul1">
+                    <h5 class="card-title" style="font-size: 16px; font-family: Verdana, Geneva, Tahoma, sans-serif;">La Calle del Terror</h5>
+                    
+                  </div>
+                </div>
+              </div>
+      
+              <div class="img1 eva">
+                <div class="card text-light border border-0" style="width: 10rem; background-color: #090E21; text-align: center;">
+                  <img src="./asset/img/main_movies_img/2.webp" class="card-img-top" alt="..." style="height: 227px;  border-radius: 7px;">
+                  <div class="Titul1">
+                    <h5 class="card-title" style="font-size: 16px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Spiderman</h5>
+                    
+                  </div>
+                </div>
+              </div>
+      
+              <div class="img1 eva">
+                <div class="card text-light border border-0" style="width: 10rem; background-color: #090E21; text-align: center;">
+                  <img src="./asset/img/main_movies_img/3.webp" class="card-img-top" alt="..." style="height: 227px; border-radius: 7px;">
+                  <div class="Titul1">
+                    <h5 class="card-title" style="font-size: 16px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Ice Age</h5>
+                    
+                  </div>
+                </div>
+              </div>
+  
+      
+              <div class="img1 eva">
+                <div class="card text-light border border-0" style="width: 10rem; background-color: #090E21; text-align: center;">
+                  <img src="./asset/img/main_movies_img/9.webp" class="card-img-top" alt="..." style="height: 227px; border-radius: 7px;">
+                  <div class="Titul1">
+                    <h5 class="card-title" style="font-size: 16px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Spiral: From the Book of Saw</h5>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="img1 eva" style="margin-top: 30px;">
+                <div class="card text-light border border-0" style="width: 10rem; background-color: #090E21; text-align: center;">
+                  <img src="./asset/img/main_movies_img/4.webp" class="card-img-top" alt="..." style="height: 227px; border-radius: 7px;">
+                  <div class="Titul1">
+                    <h5 class="card-title" style="font-size: 16px; font-family: Verdana, Geneva, Tahoma, sans-serif;">700 Tiburones</h5>
+                    
+                  </div>
+                </div>
+              </div>
+      
+              <div class="img1 eva" style="margin-top: 30px;">
+                <div class="card text-light border border-0" style="width: 10rem; background-color: #090E21; text-align: center;">
+                  <img src="./asset/img/main_movies_img/5.webp" class="card-img-top" alt="..." style="height: 227px; border-radius: 7px;">
+                  <div class="Titul1">
+                    <h5 class="card-title" style="font-size: 16px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Mortal Kombat</h5>
+                    
+                  </div>
+                </div>
+              </div>
+      
+              <div class="img1 eva" style="margin-top: 30px;">
+                <div class="card text-light border border-0" style="width: 10rem; background-color: #090E21; text-align: center;">
+                  <img src="./asset/img/main_movies_img/6.webp" class="card-img-top" alt="..." style="height: 227px; border-radius: 7px;">
+                  <div class="Titul1">
+                    <h5 class="card-title" style="font-size: 16px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Justice League</h5>
+                    
+                  </div>
+                </div>
+              </div>
+      
+              <div class="img1 eva" style="margin-top: 30px;">
+                <div class="card text-light border border-0" style="width: 10rem; background-color: #090E21; text-align: center;">
+                  <img src="./asset/img/main_movies_img/7.webp" class="card-img-top" alt="..." style="height: 227px; border-radius: 7px;">
+                  <div class="Titul1">
+                    <h5 class="card-title" style="font-size: 16px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Raya y el dragón</h5>
+                    
+                  </div>
+                </div>
+              </div>
+  
+      
+              <div class="img1 eva" style="margin-top: 30px;">
+                <div class="card text-light border border-0" style="width: 10rem; background-color: #090E21; text-align: center;">
+                  <img src="./asset/img/main_movies_img/8.webp" class="card-img-top" alt="..." style="height: 227px; border-radius: 7px;">
+                  <div class="Titul1">
+                    <h5 class="card-title" style="font-size: 16px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Luca</h5>
+                    
+                  </div>
+                </div>
+              </div>
+          </div>
+  
+          <h5 style="color: white; margin-top: 30px;">Peliculas Añadidas Recientemente</h5>
+            <div class="container-xxl pelis">
+                          
+              <div class="img1 eva">
+                <div class="card text-light border border-0" style="width: 10rem; background-color: #090E21; text-align: center;">
+                  <img src="./asset/img/main_movies_img/pel3.jpeg" class="card-img-top rounded-1" alt="..." style="height: 227px;">
+                  <div class=" Titul1">
+                    <h5 class="card-title" style="font-size: 16px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Evangelion</h5>
+                    
+                  </div>
+                </div>
+              </div>
+            
+      
+              <div class="img1 eva">
+                <div class="card text-light border border-0" style="width: 10rem; background-color: #090E21; text-align: center;">
+                  <img src="./asset/img/main_movies_img/1.webp" class="card-img-top" alt="..." style="height: 227px; border-radius: 7px;">
+                  <div class="Titul1">
+                    <h5 class="card-title" style="font-size: 16px; font-family: Verdana, Geneva, Tahoma, sans-serif;">La Calle del Terror</h5>
+                    
+                  </div>
+                </div>
+              </div>
+      
+              <div class="img1 eva">
+                <div class="card text-light border border-0" style="width: 10rem; background-color: #090E21; text-align: center;">
+                  <img src="./asset/img/main_movies_img/2.webp" class="card-img-top" alt="..." style="height: 227px;  border-radius: 7px;">
+                  <div class="Titul1">
+                    <h5 class="card-title" style="font-size: 16px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Spiderman</h5>
+                    
+                  </div>
+                </div>
+              </div>
+      
+              <div class="img1 eva">
+                <div class="card text-light border border-0" style="width: 10rem; background-color: #090E21; text-align: center;">
+                  <img src="./asset/img/main_movies_img/3.webp" class="card-img-top" alt="..." style="height: 227px; border-radius: 7px;">
+                  <div class="Titul1">
+                    <h5 class="card-title" style="font-size: 16px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Ice Age</h5>
+                    
+                  </div>
+                </div>
+              </div>
+  
+      
+              <div class="img1 eva">
+                <div class="card text-light border border-0" style="width: 10rem; background-color: #090E21; text-align: center;">
+                  <img src="./asset/img/main_movies_img/9.webp" class="card-img-top" alt="..." style="height: 227px; border-radius: 7px;">
+                  <div class="Titul1">
+                    <h5 class="card-title" style="font-size: 16px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Spiral: From the Book of Saw</h5>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="img1 eva" style="margin-top: 30px;">
+                <div class="card text-light border border-0" style="width: 10rem; background-color: #090E21; text-align: center;">
+                  <img src="./asset/img/main_movies_img/4.webp" class="card-img-top" alt="..." style="height: 227px; border-radius: 7px;">
+                  <div class="Titul1">
+                    <h5 class="card-title" style="font-size: 16px; font-family: Verdana, Geneva, Tahoma, sans-serif;">700 Tiburones</h5>
+                    
+                  </div>
+                </div>
+              </div>
+      
+              <div class="img1 eva" style="margin-top: 30px;">
+                <div class="card text-light border border-0" style="width: 10rem; background-color: #090E21; text-align: center;">
+                  <img src="./asset/img/main_movies_img/5.webp" class="card-img-top" alt="..." style="height: 227px; border-radius: 7px;">
+                  <div class="Titul1">
+                    <h5 class="card-title" style="font-size: 16px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Mortal Kombat</h5>
+                    
+                  </div>
+                </div>
+              </div>
+      
+              <div class="img1 eva" style="margin-top: 30px;">
+                <div class="card text-light border border-0" style="width: 10rem; background-color: #090E21; text-align: center;">
+                  <img src="./asset/img/main_movies_img/6.webp" class="card-img-top" alt="..." style="height: 227px; border-radius: 7px;">
+                  <div class="Titul1">
+                    <h5 class="card-title" style="font-size: 16px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Justice League</h5>
+                    
+                  </div>
+                </div>
+              </div>
+      
+              <div class="img1 eva" style="margin-top: 30px;">
+                <div class="card text-light border border-0" style="width: 10rem; background-color: #090E21; text-align: center;">
+                  <img src="./asset/img/main_movies_img/7.webp" class="card-img-top" alt="..." style="height: 227px; border-radius: 7px;">
+                  <div class="Titul1">
+                    <h5 class="card-title" style="font-size: 16px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Raya y el dragón</h5>
+                    
+                  </div>
+                </div>
+              </div>
+  
+      
+              <div class="img1 eva" style="margin-top: 30px;">
+                <div class="card text-light border border-0" style="width: 10rem; background-color: #090E21; text-align: center;">
+                  <img src="./asset/img/main_movies_img/8.webp" class="card-img-top" alt="..." style="height: 227px; border-radius: 7px;">
+                  <div class="Titul1">
+                    <h5 class="card-title" style="font-size: 16px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Luca</h5>
+                    
+                  </div>
+                </div>
+              </div>
+          </div>
+  
+            <h5 style="color: white; margin-top: 30px;">Peliculas Recomendadas</h5>
+            <div class="container-xxl pelis">
+                          
+              <div class="img1 eva">
+                <div class="card text-light border border-0" style="width: 10rem; background-color: #090E21; text-align: center;">
+                  <img src="./asset/img/main_movies_img/pel3.jpeg" class="card-img-top" alt="..." style="height: 227px; border-radius: 7px;">
+                  <div class="">
+                    <h5 class="card-title" style="font-size: 16px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Evangelion</h5>
+                    
+                  </div>
+                </div>
+              </div>
+      
+              <div class="img1 eva">
+                <div class="card text-light border border-0" style="width: 10rem; background-color: #090E21; text-align: center;">
+                  <img src="./asset/img/main_movies_img/1.webp" class="card-img-top" alt="..." style="height: 227px; border-radius: 7px;">
+                  <div class="">
+                    <h5 class="card-title" style="font-size: 16px; font-family: Verdana, Geneva, Tahoma, sans-serif;">La Calle del Terror</h5>
+                    
+                  </div>
+                </div>
+              </div>
+      
+              <div class="img1 eva">
+                <div class="card text-light border border-0" style="width: 10rem; background-color: #090E21; text-align: center;">
+                  <img src="./asset/img/main_movies_img/2.webp" class="card-img-top" alt="..." style="height: 227px;  border-radius: 7px;">
+                  <div class="">
+                    <h5 class="card-title" style="font-size: 16px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Spiderman</h5>
+                    
+                  </div>
+                </div>
+              </div>
+      
+              <div class="img1 eva">
+                <div class="card text-light border border-0" style="width: 10rem; background-color: #090E21; text-align: center;">
+                  <img src="./asset/img/main_movies_img/3.webp" class="card-img-top" alt="..." style="height: 227px; border-radius: 7px;">
+                  <div class="">
+                    <h5 class="card-title" style="font-size: 16px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Ice Age</h5>
+                    
+                  </div>
+                </div>
+              </div>
+  
+      
+              <div class="img1 eva">
+                <div class="card text-light border border-0" style="width: 10rem; background-color: #090E21; text-align: center;">
+                  <img src="./asset/img/main_movies_img/4.webp" class="card-img-top" alt="..." style="height: 227px; border-radius: 7px;">
+                  <div class="">
+                    <h5 class="card-title" style="font-size: 16px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Card title</h5>
+                    
+                  </div>
+                </div>
+              </div>
+              
+              <div class="img1 eva" style="margin-top: 30px;">
+                <div class="card text-light border border-0" style="width: 10rem; background-color: #090E21; text-align: center;">
+                  <img src="./asset/img/main_movies_img/11.webp" class="card-img-top" alt="..." style="height: 227px; border-radius: 7px;">
+                  <div class="">
+                    <h5 class="card-title" style="font-size: 16px; font-family: Verdana, Geneva, Tahoma, sans-serif;">700 Tiburones</h5>
+                    
+                  </div>
+                </div>
+              </div>
+  
+              <div class="img1 eva" style="margin-top: 30px;">
+                <div class="card text-light border border-0" style="width: 10rem; background-color: #090E21; text-align: center;">
+                  <img src="./asset/img/main_movies_img/12.webp" class="card-img-top" alt="..." style="height: 227px; border-radius: 7px;">
+                  <div class="">
+                    <h5 class="card-title" style="font-size: 16px; font-family: Verdana, Geneva, Tahoma, sans-serif;">700 Tiburones</h5>
+                    
+                  </div>
+                </div>
+              </div>
+  
+              <div class="img1 eva" style="margin-top: 30px;">
+                <div class="card text-light border border-0" style="width: 10rem; background-color: #090E21; text-align: center;">
+                  <img src="./asset/img/main_movies_img/10.webp" class="card-img-top" alt="..." style="height: 227px; border-radius: 7px;">
+                  <div class="">
+                    <h5 class="card-title" style="font-size: 16px; font-family: Verdana, Geneva, Tahoma, sans-serif;">700 Tiburones</h5>
+                    
+                  </div>
+                </div>
+              </div>
+  
+              <div class="img1 eva" style="margin-top: 30px;">
+                <div class="card text-light border border-0" style="width: 10rem; background-color: #090E21; text-align: center;">
+                  <img src="./asset/img/main_movies_img/14.webp" class="card-img-top" alt="..." style="height: 227px; border-radius: 7px;">
+                  <div class="">
+                    <h5 class="card-title" style="font-size: 16px; font-family: Verdana, Geneva, Tahoma, sans-serif;">700 Tiburones</h5>
+                    
+                  </div>
+                </div>
+              </div>
+  
+              <div class="img1 eva" style="margin-top: 30px;">
+                <div class="card text-light border border-0" style="width: 10rem; background-color: #090E21; text-align: center;">
+                  <img src="./asset/img/main_movies_img/15.webp" class="card-img-top" alt="..." style="height: 227px; border-radius: 7px;">
+                  <div class="">
+                    <h5 class="card-title" style="font-size: 16px; font-family: Verdana, Geneva, Tahoma, sans-serif;">700 Tiburones</h5>
+                    
+                  </div>
+                </div>
+              </div>
+          </div>
+  
+          </div>
+          <div class="sacar col-2 coll4">
+            <h5 style="color: white; margin-top: 30px;">Año de Lanzamiento</h5>
+            
+  
+            <div style="margin-top: 20px;">
+              
+              <button type="button" class="btn btn-outline-primary btn0">2023</button>
+              <button type="button" class="btn btn-outline-primary btn0">2022</button>
+              <button type="button" class="btn btn-outline-primary btn0">2021</button>
+              <button type="button" class="btn btn-outline-primary btn0">2020</button>
+  
+  
+            </div>
+            <div style="margin-top: 5px;">
+              
+              <button type="button" class="btn btn-outline-primary btn0">2019</button>
+              <button type="button" class="btn btn-outline-primary btn0">2018</button>
+              <button type="button" class="btn btn-outline-primary btn0">2017</button>
+              <button type="button" class="btn btn-outline-primary btn0">2016</button>
+  
+  
+            </div>
+            <div style="margin-top: 5px;">
+              
+              <button type="button" class="btn btn-outline-primary btn0">2015</button>
+              <button type="button" class="btn btn-outline-primary btn0">2014</button>
+              <button type="button" class="btn btn-outline-primary btn0">2013</button>
+              <button type="button" class="btn btn-outline-primary btn0">2012</button>  
+            </div>
+  
+            <div style="margin-top: 5px;">
+              
+              <button type="button" class="btn btn-outline-primary btn0">2011</button>
+              <button type="button" class="btn btn-outline-primary btn0">2010</button>
+              <button type="button" class="btn btn-outline-primary btn0">2009</button>
+              <button type="button" class="btn btn-outline-primary btn0">2008</button>
+  
+  
+            </div>
+            <div style="margin-top: 5px;">
+              
+              <button type="button" class="btn btn-outline-primary btn0">2007</button>
+              <button type="button" class="btn btn-outline-primary btn0">2006</button>
+              <button type="button" class="btn btn-outline-primary btn0">2005</button>
+              <button type="button" class="btn btn-outline-primary btn0">2004</button>
+  
+  
+            </div>    
+            <div style="margin-top: 5px;">
+              
+              <button type="button" class="btn btn-outline-primary btn0">2003</button>
+              <button type="button" class="btn btn-outline-primary btn0">2002</button>
+              <button type="button" class="btn btn-outline-primary btn0">2001</button>
+              <button type="button" class="btn btn-outline-primary btn0">2000</button>
+  
+  
+            </div>
+            
+            <h5 style="color: white; margin-top: 30px;">Populares de Hoy</h5>
+            
+            <div class="card mb-3  text-light eva d-flex" style="max-width: 540px; background-color: #121832;">
+              <div class="row g-0">
+                <div class="col-md-3">
+                  <img src="./asset/img/main_movies_img/peli 1.jpeg" class="img-xl rounded-start" alt="..." style="width: 60px;">
+                </div>
+                <div class="col-md-9">
+                  <div class="card-body">
+                    <h6 class="card-title titulo1">Identidad Desbloqueada</h6>                  
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="card mb-3 text-light eva" style="max-width: 540px; background-color: #121832;">
+              <div class="row g-0">
+                <div class="col-md-3">
+                  <img src="./asset/img/main_movies_img/peli5.webp" class="img-xl rounded-start" alt="..." style="width: 60px;">
+                </div>
+                <div class="col-md-9">
+                  <div class="card-body">
+                    <h6 class="card-title titulo1">Avatar: El Camino del Agua</h6>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="card mb-3 text-light eva" style="max-width: 540px; background-color: #121832;">
+              <div class="row g-0">
+                <div class="col-md-3">
+                  <img src="./asset/img/main_movies_img/peli4.jpeg" class="img-xl rounded-start" alt="..." style="width: 60px;">
+                </div>
+                <div class="col-md-9">
+                  <div class="card-body">
+                    <h6 class="card-title titulo1">Huesera</h6>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="card mb-3 text-light eva" style="max-width: 540px; background-color: #121832;">
+              <div class="row g-0">
+                <div class="col-md-3">
+                  <img src="./asset/img/main_movies_img/peli2.jpeg" class="img-xl rounded-start" alt="..." style="width: 60px;">
+                </div>
+                <div class="col-md-9">
+                  <div class="card-body">
+                    <h6 class="card-title titulo1">Ralph el Demoledor: WIFI</h6>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <h5 style="color: white; margin-top: 30px;">Populares de la Semana</h5>
+            
+            <div class="card mb-3  text-light eva" style="max-width: 540px; background-color: #121832;">
+              <div class="row g-0">
+                <div class="col-md-3">
+                  <img src="./asset/img/main_movies_img/peli 1.jpeg" class="img-xl rounded-start" alt="..." style="width: 60px;">
+                </div>
+                <div class="col-md-9">
+                  <div class="card-body">
+                    <h6 class="card-title titulo1">Identidad Desbloqueada</h6>                  
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="card mb-3 text-light eva" style="max-width: 540px; background-color: #121832;">
+              <div class="row g-0">
+                <div class="col-md-3">
+                  <img src="./asset/img/main_movies_img/peli5.webp" class="img-xl rounded-start" alt="..." style="width: 60px;">
+                </div>
+                <div class="col-md-9">
+                  <div class="card-body">
+                    <h6 class="card-title  titulo1">Avatar: El Camino del Agua</h6>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="card mb-3 text-light eva" style="max-width: 540px; background-color: #121832;">
+              <div class="row g-0">
+                <div class="col-md-3">
+                  <img src="./asset/img/main_movies_img/peli4.jpeg" class="img-xl rounded-start" alt="..." style="width: 60px;">
+                </div>
+                <div class="col-md-9">
+                  <div class="card-body">
+                    <h6 class="card-title titulo1">Huesera</h6>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="card mb-3 text-light eva" style="max-width: 540px; background-color: #121832;">
+              <div class="row g-0">
+                <div class="col-md-3">
+                  <img src="./asset/img/main_movies_img/peli2.jpeg" class="img-xl rounded-start" alt="..." style="width: 60px;">
+                </div>
+                <div class="col-md-9">
+                  <div class="card-body">
+                    <h6 class="card-title titulo1">Ralph el Demoledor: WIFI</h6>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+  
+            <h5 style="color: white; margin-top: 30px;">Populares del Mes</h5>
+            
+            <div class="card mb-3  text-light eva" style="max-width: 540px; background-color: #121832;">
+              <div class="row g-0">
+                <div class="col-md-3">
+                  <img src="./asset/img/main_movies_img/peli 1.jpeg" class="img-xl rounded-start" alt="..." style="width: 60px;">
+                </div>
+                <div class="col-md-9">
+                  <div class="card-body">
+                    <h6 class="card-title titulo1">Identidad Desbloqueada</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="card mb-3 text-light eva" style="max-width: 540px; background-color: #121832;">
+              <div class="row g-0">
+                <div class="col-md-3">
+                  <img src="./asset/img/main_movies_img/peli5.webp" class="img-xl rounded-start" alt="..." style="width: 60px;">
+                </div>
+                <div class="col-md-9">
+                  <div class="card-body">
+                    <h6 class="card-title titulo1">Avatar: El Camino del Agua</h6>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="card mb-3 text-light eva" style="max-width: 540px; background-color: #121832;">
+              <div class="row g-0">
+                <div class="col-md-3">
+                  <img src="./asset/img/main_movies_img/peli4.jpeg" class="img-xl rounded-start" alt="..." style="width: 60px;">
+                </div>
+                <div class="col-md-9">
+                  <div class="card-body">
+                    <h6 class="card-title titulo1">Huesera</h6>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="card mb-3 text-light eva" style="max-width: 540px; background-color: #121832;">
+              <div class="row g-0">
+                <div class="col-md-3">
+                  <img src="./asset/img/main_movies_img/peli2.jpeg" class="img-xl rounded-start" alt="..." style="width: 60px;">
+                </div>
+                <div class="col-md-9">
+                  <div class="card-body">
+                    <h6 class="card-title titulo1">Ralph el Demoledor: WIFI</h6>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            </div>
+
+            <div class="col-2 coll1">
+            </div>
+
+          </div>
+
+      </main>
+      <!-- <footer id="main_footer" class="py-3 my-4 text-center text-white">
+        <br>
+        <div class="container-fluid">
+            <a id="footer-logo" class="nav-link" href="#">
+                <img src="./asset/img/logo_site.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                    <span style=" font-size: 1.2rem;">Stremax</span>
+            </a>
+        </div>
+        <br>
+        <ul class="nav justify-content-center pb-3 mb-3">
+            <li class="nav-item">
+                <a href="https://facebook.com" class="nav-link px-2 text-light">
+                    <img src="./asset/img/social_media_logos/facebook.png"  alt="facebook">
+                </a></li>
+
+            <li class="nav-item">
+                <a href="" class="nav-link px-2 text-muted">
+                    <img src="./asset/img/social_media_logos/instagram.png" width="50px" alt="instagram">
+                </a></li>
+
+            <li class="nav-item">
+                <a href="" class="nav-link px-2 text-muted">
+                    <img src="./asset/img/social_media_logos/twitter.png" width="50px" alt="twitter">
+                </a></li>
+
+            <li class="nav-item">
+                <a href="" class="nav-link px-2 text-muted">
+                    <img src="./asset/img/social_media_logos/github.png" width="50px" alt="github">
+                </a></li>
+
+            <li class="nav-item">
+                <a href="" class="nav-link px-2 text-muted">
+                    <img src="./asset/img/social_media_logos/youtube.png" width="50px" alt="youtube">
+                </a></li>
+
+            <li class="nav-item">
+                <a href="" class="nav-link px-2 text-muted">
+                    <img src="./asset/img/social_media_logos/tiktok.png" width="50px" alt="tiktok">
+                </a></li>
+        </ul>
+        <p class="text-light" style="color: white; font-size: 12px; font-family: Verdana, Geneva, Tahoma, sans-serif;">
+            <span>© 2023 Stremax. All rights reserved</span>
+        </p>
+      </footer> -->
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+
+</html>
